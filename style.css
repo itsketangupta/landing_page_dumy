@@ -2,6 +2,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'roboto', sans-serif;
   }
 
   * {
@@ -49,9 +50,14 @@
       object-fit: cover;
   }
 
-  a {
-      text-decoration: none;
+  nav ul .contact a {
       color: white;
+      text-decoration: none;
+  }
+
+  nav ul a {
+      color: grey;
+      text-decoration: none;
   }
 
   nav {
@@ -70,23 +76,133 @@
       padding: 10px 20px;
       margin-right: -10px;
       border-radius: 5px;
+      color: white;
   }
 
   nav ul .links {
-      display: flex;
       align-items: center;
       list-style: none;
       gap: 50px;
+      opacity: 1;
+      transition: 0.3s;
+      display: flex;
   }
 
   nav ul {
       display: flex;
       list-style: none;
       align-items: center;
+      transition: 0.3s;
       gap: 50px;
       z-index: 3;
   }
 
   nav ul li img {
       width: 40px;
+  }
+
+
+  .Book_A_call a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .Book_A_call {
+      background: #4c4c4c;
+      display: none;
+      padding: 10px 10px;
+      margin-right: -10px;
+      border-radius: 5px;
+  }
+
+  .book img {
+      transform: scaleY(-1);
+  }
+
+  .book:hover img {
+      transition: all 0.3s ease-in-out;
+      transform: scaleY(-1) translateY(10px) translateX(10px);
+  }
+
+  .book {
+      position: fixed;
+      bottom: 10px;
+      scale: 0.8;
+      right: 0;
+      background: #8a5cff;
+      color: white;
+      padding: 25px 40px;
+      border-radius: 100px;
+      z-index: 3;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 1.5rem;
+  }
+
+  .hero {
+      z-index: 1;
+      width: 337px;
+      margin-left: 50%;
+      margin-right: auto;
+      margin-top: 9rem;
+      padding: 10px 40px 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      overflow: hidden;
+  }
+
+  .hero::before {
+      content: "";
+      position: absolute;
+      inset: -70px;
+      background: conic-gradient(from 0deg,
+              transparent 0deg,
+              transparent 310deg,
+              rgba(255, 255, 255, 0.95) 340deg,
+              transparent 360deg);
+      animation: heroRotate 4s linear infinite;
+      filter: blur(30px);
+  }
+
+  .hero::after {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      background: #201e1e;
+      border-radius: 28px;
+      z-index: 1;
+  }
+
+  .hero h3 {
+      color: white;
+      width: auto;
+      font-size: 1.25rem;
+      height: 37.33px;
+      font-weight: 500;
+      z-index: 2;
+  }
+
+  @keyframes heroRotate {
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  .hero_txt {
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      letter-spacing: -.04444rem;
+      max-width: 49.9rem;
+      margin-top: 2.22rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 490px;
+      font-size: 4.44rem;
+      position: relative;
   }
