@@ -1,0 +1,21 @@
+<svg width="300" height="300" viewBox="0 0 300 300" role="img" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#FF3D1A" rx="48"/>
+  <path
+    d="M45,150 L105,150 L128,108 L152,192 L175,78 L198,192 L220,150 L258,150"
+    fill="none"
+    stroke="white"
+    stroke-width="17"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="380"
+    stroke-dashoffset="380"
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      values="380;0;0;380"
+      keyTimes="0;0.5;0.8;1"
+      dur="2.5s"
+      repeatCount="indefinite"
+    />
+  </path>
+</svg>

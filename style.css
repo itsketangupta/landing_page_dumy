@@ -198,11 +198,27 @@
       color: #fff;
       text-align: center;
       letter-spacing: -.04444rem;
-      max-width: 49.9rem;
+      max-height: 205px;
+      max-width: 545px;
+      font-weight: 500;
       margin-top: 2.22rem;
       margin-left: auto;
       margin-right: auto;
       width: 490px;
+      text-align: center;
       font-size: 4.44rem;
       position: relative;
+  }
+
+
+  .wave_circle {
+      width: 115px;
+      height: 115px;
+      border-radius: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 12%;
+      margin-top: -9%;
   }
