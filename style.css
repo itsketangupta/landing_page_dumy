@@ -222,3 +222,198 @@
       margin-left: 12%;
       margin-top: -9%;
   }
+
+  @media screen and (max-width: 942px) {
+      .video_box {
+          width: 100vw;
+      }
+  }
+
+  .building_box {
+      width: 147px;
+      height: 147px;
+      border-radius: 20px;
+      background: #1f1f1f;
+      display: flex;
+      margin-left: 4.5%;
+      margin-top: -3%;
+      overflow: hidden;
+  }
+
+  .slider {
+      width: 147px;
+      overflow: hidden;
+  }
+
+  .track {
+      display: flex;
+      width: max-content;
+      border-radius: 20px;
+      animation: roll 6s linear infinite;
+  }
+
+  @keyframes roll {
+      from {
+          transform: translateX(0);
+      }
+
+      to {
+          transform: translateX(-147px);
+      }
+  }
+
+  .track img {
+      height: 100px;
+      width: 40%;
+      transform: translateY(47px);
+      z-index: 2;
+  }
+
+  .box_edge {
+      background: rgba(255, 255, 255, 0.2);
+      width: 15px;
+      height: 80px;
+      transform: translateY(65px);
+      background: transparent;
+  }
+
+  .rocket img {
+      transform: scale(0.75);
+  }
+
+  .rocket {
+      transform: scale(0.6);
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      border-radius: 100%;
+      background: #fff;
+      display: flex;
+      margin-left: 1%;
+      margin-top: 3%;
+      justify-content: center;
+      z-index: 4;
+      align-items: center;
+  }
+
+  .bubble_chat li {
+      color: white;
+      list-style: none;
+      z-index: 4;
+      transform: translateY(23px) translateX(70px) scale(0.6) !important;
+  }
+
+  .bubble_chat img {
+      transform: scale(0.3);
+      position: absolute;
+      margin-top: -1%;
+  }
+
+
+  .widget_card {
+      position: relative;
+      width: 270px;
+      height: 146px;
+      margin-left: 15%;
+      margin-top: 5%;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #070707, #111);
+      overflow: hidden;
+      z-index: 3;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+
+  }
+
+  .grid {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 40px 20px;
+  }
+
+  .grid span {
+      width: 1px;
+      height: 180px;
+      border-left: 1px dashed rgba(255, 255, 255, 0.15);
+  }
+
+  .widget_card svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .line {
+      fill: none;
+      stroke: #f4cf4d;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+      filter:
+          drop-shadow(0 0 6px #f4cf4d) drop-shadow(0 0 15px #f4cf4d);
+
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+
+      animation: draw 2s linear infinite;
+  }
+
+  .dot {
+      fill: #f4cf4d;
+      filter: drop-shadow(0 0 10px #f4cf4d);
+  }
+
+  @keyframes draw {
+      0% {
+          stroke-dashoffset: 1000;
+      }
+
+      100% {
+          stroke-dashoffset: 0;
+      }
+  }
+
+  .blue-box {
+      position: absolute;
+      right: -38px;
+      bottom: -20px;
+      width: 200px;
+      height: 120px;
+      scale: 0.5;
+      border-radius: 24px;
+      background: #2f7cff;
+      padding: 20px;
+      color: white;
+  }
+
+  .blue-box h2 {
+      font-size: 26px;
+      margin-top: 15px;
+      font-weight: 300;
+  }
+
+  .title {
+      position: absolute;
+      top: 10px;
+      left: 14px;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  .turned_arrow {
+      position: relative;
+      top: 10px;
+      right: 14px;
+  }
+
+  .turned_arrow img {
+      position: absolute;
+      top: -20px;
+      transform: scale(1.5);
+      left: 20%;
+      z-index: 3;
+  }
