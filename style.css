@@ -25,9 +25,9 @@
           radial-gradient(ellipse 20% 80% at 50% 35%,
               rgba(255, 255, 255, 0.14),
               rgba(255, 255, 255, 0.04) 35%,
-              rgba(0, 0, 0, 1) 70%);
+              #080808 70%);
 
-      background-color: black;
+      background-color: #080808;
   }
 
   .video_box video {
@@ -554,18 +554,20 @@
       margin-right: auto;
       font-size: 3.19444rem;
       line-height: 118.33%;
+      z-index: 2;
   }
 
   .letter {
       opacity: 0;
       filter: blur(10px);
-
       transition:
           opacity .3s ease,
           filter .3s ease;
+          z-index: 2;
   }
 
   .letter.show {
+      z-index: 2;
       opacity: 1;
       filter: blur(0);
   }
@@ -575,10 +577,15 @@
   }
 
   .cards {
-    width: 658px;
-    height: 447px;
-    background: #1f1f1f;
-    transform: rotate(-60deg);
-    transition: transform 0.6s ease-in-out;
-    border-radius: 20px;
+      width: 528px;
+      height: 359px;
+      padding-top: 1.32rem;
+      margin-left: 218px;
+      padding-right: 1.39rem;
+      text-align: center;
+      background-color: #080808;
+      border: 1px solid #ffffff1a;
+      transform: rotate(-60deg);
+      transition: transform 0.6s ease-in-out;
+      border-radius: 1.88rem;
   }
