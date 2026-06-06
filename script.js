@@ -82,14 +82,31 @@ window.addEventListener("scroll", () => {
 
 });
 
-const card_box = document.querySelector(".cards");
+const card1 = document.querySelector(".card1");
+const card2 = document.querySelector(".card2");
+const card3 = document.querySelector(".card3");
+const card4 = document.querySelector(".card4");
 
 window.addEventListener("scroll", () => {
 
     if (window.scrollY >= 4500) {
-        card_box.style.transform = "rotate(0deg)";
+        card1.style.transform = "rotate(0deg)";
+        card2.style.transform = "rotate(0deg)";
     } else {
-        card_box.style.transform = "rotate(-60deg)";
+        card1.style.transform = "rotate(-60deg)";
+        card2.style.transform = "rotate(60deg)";
+    }
+
+});
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY >= 4750) {
+        card3.style.transform = "rotate(0deg) ";
+        card4.style.transform = "rotate(0deg)";
+    } else {
+        card3.style.transform = "rotate(-60deg)";
+        card4.style.transform = "rotate(60deg)";
     }
 
 });
