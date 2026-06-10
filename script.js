@@ -28,6 +28,34 @@ sentence.split("").forEach(char => {
 
 });
 
+const next_body_sentence = `We think about the big picture and
+focus primarily on your product’s
+funding & business success.`;
+
+const next_body_text = document.getElementById("next_body_text");
+
+next_body_sentence.split("").forEach(char => {
+
+    if (char === "\n") {
+        next_body_text.appendChild(document.createElement("br"));
+        return;
+    }
+
+    const span = document.createElement("span");
+
+    span.classList.add("letter");
+
+    if (char === " ") {
+        span.innerHTML = "&nbsp;";
+        span.classList.add("space");
+    } else {
+        span.textContent = char;
+    }
+
+    next_body_text.appendChild(span);
+
+});
+
 const video_box = document.querySelector(".video_box");
 const hero = document.querySelector(".hero");
 const letters = document.querySelectorAll(".letter");
@@ -99,6 +127,21 @@ window.addEventListener("scroll", () => {
 
 });
 
+const nav = document.querySelector("nav");
+const nav_logo = document.querySelector("nav ul li a img");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY >= 11400) {
+        nav.style.background = "#fafafa";
+        nav_logo.src = "assests/black_logo.svg";
+    } else {
+        nav.style.background = "#191919";
+        nav_logo.src = "assests/favicon.svg";
+    }
+
+});
+
 window.addEventListener("scroll", () => {
 
     if (window.scrollY >= 4750) {
@@ -135,23 +178,23 @@ window.addEventListener("scroll", () => {
 });
 
 const cards = document.querySelectorAll(
-  ".main_new_cards .right .cards-section .card_main_rotate .card2 img, .main_new_cards .right .cards-section .card_main_rotate .card3 img, .main_new_cards .right .cards-section .card_main_rotate .card4 img"
+    ".main_new_cards .right .cards-section .card_main_rotate .card2 img, .main_new_cards .right .cards-section .card_main_rotate .card3 img, .main_new_cards .right .cards-section .card_main_rotate .card4 img"
 );
 
 window.addEventListener("scroll", () => {
-  const viewportCenter = window.innerHeight / 2;
+    const viewportCenter = window.innerHeight / 2;
 
-  cards.forEach(card => {
-    const rect = card.getBoundingClientRect();
-    const cardCenter = rect.top + rect.height / 2;
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const cardCenter = rect.top + rect.height / 2;
 
-    const distance = Math.abs(viewportCenter - cardCenter);
+        const distance = Math.abs(viewportCenter - cardCenter);
 
-    // jitna door hoga utna fade hoga
-    let opacity = 1 - distance / 400;
+        // jitna door hoga utna fade hoga
+        let opacity = 1 - distance / 400;
 
-    opacity = Math.max(0, Math.min(1, opacity));
+        opacity = Math.max(0, Math.min(1, opacity));
 
-    card.style.opacity = opacity;
-  });
+        card.style.opacity = opacity;
+    });
 });
