@@ -28,34 +28,6 @@ sentence.split("").forEach(char => {
 
 });
 
-const next_body_sentence = `We think about the big picture and
-focus primarily on your product’s
-funding & business success.`;
-
-const next_body_text = document.getElementById("next_body_text");
-
-next_body_sentence.split("").forEach(char => {
-
-    if (char === "\n") {
-        next_body_text.appendChild(document.createElement("br"));
-        return;
-    }
-
-    const span = document.createElement("span");
-
-    span.classList.add("letter");
-
-    if (char === " ") {
-        span.innerHTML = "&nbsp;";
-        span.classList.add("space");
-    } else {
-        span.textContent = char;
-    }
-
-    next_body_text.appendChild(span);
-
-});
-
 const video_box = document.querySelector(".video_box");
 const hero = document.querySelector(".hero");
 const letters = document.querySelectorAll(".letter");
@@ -161,7 +133,6 @@ window.addEventListener("scroll", () => {
 
     const startPoint = window.innerHeight + 500;
 
-    // jitna chhota multiplier, utni jaldi end
     const totalDistance = startPoint + rect.height * 0.5;
 
     let progress = (startPoint - rect.top) / totalDistance;
@@ -190,11 +161,52 @@ window.addEventListener("scroll", () => {
 
         const distance = Math.abs(viewportCenter - cardCenter);
 
-        // jitna door hoga utna fade hoga
         let opacity = 1 - distance / 400;
 
         opacity = Math.max(0, Math.min(1, opacity));
 
         card.style.opacity = opacity;
     });
+});
+
+const clinet_box_container = document.getElementById("clinet_box_container");
+const track = document.getElementById("track");
+
+const original = track.innerHTML;
+
+track.innerHTML =
+    original +
+    original +
+    original +
+    original +
+    original +
+    original +
+    original;
+
+requestAnimationFrame(() => {
+
+    const sectionWidth = track.scrollWidth / 7;
+
+    clinet_box_container.scrollLeft = sectionWidth * 3;
+
+    let fixing = false;
+
+    clinet_box_container.addEventListener("scroll", () => {
+
+        if (fixing) return;
+
+        if (clinet_box_container.scrollLeft < sectionWidth * 1.5) {
+            fixing = true;
+            clinet_box_container.scrollLeft += sectionWidth * 2;
+            requestAnimationFrame(() => fixing = false);
+        }
+
+        if (clinet_box_container.scrollLeft > sectionWidth * 4.5) {
+            fixing = true;
+            clinet_box_container.scrollLeft -= sectionWidth * 2;
+            requestAnimationFrame(() => fixing = false);
+        }
+
+    });
+
 });

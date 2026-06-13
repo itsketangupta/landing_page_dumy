@@ -1308,6 +1308,7 @@
       background: #ffffff;
       display: flex;
       justify-content: center;
+      flex-direction: column;
       align-items: center;
       position: relative;
   }
@@ -1318,7 +1319,7 @@
       width: 690px;
       line-height: 117%;
       position: absolute;
-      top: 20%;
+      top: 7%;
       text-align: center;
   }
 
@@ -1341,8 +1342,8 @@
       justify-content: center;
       align-items: center;
       max-width: 77.5rem;
-      margin: 30rem auto 0;
-      padding-bottom: 17rem;
+      margin: 30rem auto 10rem;
+      padding-bottom: 1rem;
       padding-left: 2.8rem;
       padding-right: 2.8rem;
       display: flex;
@@ -1405,3 +1406,284 @@
       justify-content: center;
       align-items: center;
   }
+
+  .startups {
+      margin-bottom: 15rem;
+  }
+
+  .startups h2,
+  .startups h3 {
+      font-size: 2.488989rem;
+      color: #000000;
+      text-align: center;
+      font-weight: 500;
+      width: 43rem;
+      margin-top: 2.08rem;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .startups_header {
+      margin-bottom: 10rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+
+  .startups_cards {
+      display: flex;
+      flex-direction: column;
+      gap: 140px;
+  }
+
+  .startups_cards .column1,
+  .startups_cards .column2 {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+  }
+
+  .startups_cards .column1 .startups_card:hover,
+  .startups_cards .column2 .startups_card:hover {
+      background: #f5f5f5;
+  }
+
+  .startups_cards .column1 .startups_card,
+  .startups_cards .column2 .startups_card {
+      width: 425px;
+      height: 378px;
+      transition: background 0.3s ease-in-out;
+      border-radius: 25px;
+      display: flex;
+      padding: 2.15rem 1.1rem 1.53rem 1.4rem;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .startups_cards .column1 .startups_card h2,
+  .startups_cards .column2 .startups_card h2 {
+      text-align: left;
+      font-size: 1.9956666rem;
+      font-weight: 550;
+      margin-bottom: 1.5rem;
+      transform: translateY(-90%);
+  }
+
+  .startups_cards .column1 .startups_card .header_line,
+  .startups_cards .column2 .startups_card .header_line {
+      position: absolute;
+      top: 20%;
+      left: 6%;
+      background-color: #737373;
+      width: 2.29167rem;
+      height: .14rem;
+      margin-bottom: 2.36rem;
+  }
+
+
+  .startups_cards .column1 .startups_card p,
+  .startups_cards .column2 .startups_card p {
+      position: absolute;
+      top: 35%;
+      left: 6%;
+      color: #737373;
+      font-size: 1.11rem;
+  }
+
+  .startups_cards .column2 .startups_card .hover_button,
+  .startups_cards .column1 .startups_card .hover_button {
+      width: auto;
+      height: 18px;
+      padding: 19px 22px;
+      overflow: hidden;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      flex-direction: column;
+      user-select: none;
+      margin-left: -18rem;
+  }
+
+  .startups_cards .column2 .startups_card .hover_button .button1,
+  .startups_cards .column1 .startups_card .hover_button .button1 {
+      font-size: 1rem;
+      transition: all 0.6s ease-in-out;
+      transform: translateY(6px);
+  }
+
+  .startups_cards .column2 .startups_card .hover_button .button2,
+  .startups_cards .column1 .startups_card .hover_button .button2 {
+      transform: translateY(18px);
+      transition: all 0.6s ease-in-out;
+      font-size: 1rem;
+  }
+
+  .startups_cards .column2 .startups_card .hover_button:hover .button1,
+  .startups_cards .column1 .startups_card .hover_button:hover .button1 {
+      transform: translateY(-20px);
+  }
+
+  .startups_cards .column2 .startups_card .hover_button:hover .button2,
+  .startups_cards .column1 .startups_card .hover_button:hover .button2 {
+      transform: translateY(-11px);
+  }
+
+  .clinet_box .clinet_header h3 {
+      font-weight: 500;
+      text-align: center;
+  }
+
+  .clinet_box .clinet_header .line2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .clinet_box .clinet_header {
+      color: black;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 4.44rem;
+      line-height: 100%;
+      width: 43rem;
+      margin-bottom: 130px;
+  }
+
+  .clinet_box .review {
+      color: #080808;
+      margin-bottom: 3rem;
+      text-align: center;
+      font-size: 1.66667rem;
+  }
+
+  .clinet_box_container {
+      width: 100vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+  }
+
+  .clinet_box_container .track {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+  }
+
+  .clinet_box_container .track .card:hover .rateing h2,
+  .clinet_box_container .track .card:hover p,
+  .clinet_box_container .track .card:hover .user_name h2 {
+      color: #fff;
+  }
+
+  .clinet_box_container .track .card:hover {
+      background: #080808;
+  }
+
+  .clinet_box_container .track .card {
+      width: 642.889px;
+      transition: background-color 0.7s, color 0.3s;
+      cursor: pointer;
+      height: 400px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: rgb(245, 245, 245);
+      user-select: pointer;
+      padding: 51.149px 60px;
+  }
+
+  .clinet_box {
+      margin-bottom: 15rem;
+  }
+
+  .clinet_box_container .track .card .user_name h2 {
+      font-size: 1.51944rem;
+      font-weight: 500;
+      line-height: 1.625rem;
+  }
+
+  .clinet_box_container .track .card .role {
+      font-size: 1.21944rem;
+      font-weight: 500;
+      line-height: 1.625rem;
+      color: #c7c7c7;
+  }
+
+  .clinet_box_container .track .card .rateing h2 {
+      letter-spacing: -.77778rem;
+      padding-top: 3.7rem;
+      font-size: 7.77778rem;
+      font-weight: 500;
+      line-height: 51%;
+  }
+
+  .clinet_box_container .track .card .rateing {
+      display: flex;
+      margin-top: 3rem;
+  }
+
+  .clinet_box_container .track .card .rateing img {
+      margin-left: 20px;
+      margin-top: 20px;
+      width: 7.29rem;
+  }
+
+  .clinet_box_container .track .card p {
+      max-width: 30.9rem;
+      font-size: 1.52778rem;
+      font-weight: 500;
+      line-height: 136%;
+      margin-top: 1.508rem;
+  }
+
+  .clinet_box .hover_button,
+  .clinet_box .hover_button {
+      width: auto;
+      height: 18px;
+      padding: 19px 22px;
+      overflow: hidden;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      flex-direction: column;
+      user-select: none;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .clinet_box .hover_button .button1,
+  .clinet_box .hover_button .button1 {
+      font-size: 1rem;
+      transition: all 0.6s ease-in-out;
+      transform: translateY(6px);
+  }
+
+  .clinet_box .hover_button .button2,
+  .clinet_box .hover_button .button2 {
+      transform: translateY(18px);
+      transition: all 0.6s ease-in-out;
+      font-size: 1rem;
+  }
+
+  .clinet_box .hover_button:hover .button1,
+  .clinet_box .hover_button:hover .button1 {
+      transform: translateY(-20px);
+  }
+
+  .clinet_box .hover_button:hover .button2,
+  .clinet_box .hover_button:hover .button2 {
+      transform: translateY(-11px);
+  }
+
