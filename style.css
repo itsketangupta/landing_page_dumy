@@ -1759,7 +1759,12 @@
       transform: scale(1);
   }
 
-  .news .news_header h2 {
+  .news_container .news_box {
+      display: flex;
+      justify-content: center;
+  }
+
+  .news_container .news_header h2 {
       max-width: 55rem;
       color: white;
       margin-left: auto;
@@ -1768,5 +1773,83 @@
       text-align: center;
       font-size: 4.44rem;
       margin-top: 20.08rem;
+      margin-bottom: 4rem;
       line-height: 100%;
+  }
+
+  .news_container .news_box .news p {
+      color: #fff;
+      font-size: 1.66667rem;
+      line-height: 125%;
+  }
+
+  .news_container .news_box {
+      display: flex;
+      color: white;
+      gap: 40px;
+  }
+
+  .news_container .news_box .news1 img,
+  .news_container .news_box .news2 img,
+  .news_container .news_box .news3 img {
+      margin-bottom: 2rem;
+  }
+
+  .news_container .news_box .news1 {
+      width: 610px;
+      cursor: pointer;
+  }
+
+  .news_container .news_box .news2 {
+      width: 360px;
+      cursor: pointer;
+  }
+
+  .news_container .news_box .news3 {
+      width: 360px;
+      cursor: pointer;
+  }
+
+  .news_container .bottom_button {
+      transform: translateX(10%);
+  }
+
+  .news_container .hover_button {
+      width: auto;
+      height: 18px;
+      padding: 19px 22px;
+      color: white;
+      overflow: hidden;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      flex-direction: column;
+      user-select: none;
+      margin-left: -18rem;
+  }
+
+  .news_container .hover_button .button1,
+  .news_container .hover_button .button1 {
+      font-size: 1rem;
+      transition: all 0.6s ease-in-out;
+      transform: translateY(6px);
+  }
+
+  .news_container .hover_button .button2,
+  .news_container .hover_button .button2 {
+      transform: translateY(18px);
+      transition: all 0.6s ease-in-out;
+      font-size: 1rem;
+  }
+
+  .news_container .hover_button:hover .button1,
+  .news_container .hover_button:hover .button1 {
+      transform: translateY(-20px);
+  }
+
+  .news_container .hover_button:hover .button2,
+  .news_container .hover_button:hover .button2 {
+      transform: translateY(-11px);
   }
