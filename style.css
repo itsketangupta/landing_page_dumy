@@ -1687,3 +1687,86 @@
       transform: translateY(-11px);
   }
 
+  .Awards .Awards_header {
+      margin-top: 240px;
+  }
+
+  .Awards .Awards_header h1 {
+      max-width: 55rem;
+      color: white;
+      font-size: 5rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
+  }
+
+  .award_box h3 {
+      font-size: 34px;
+  }
+
+  .award_box .award_pic img {
+      position: absolute;
+      top: -25px;
+      right: 20%;
+  }
+
+  .award_box p {
+      color: #737373;
+  }
+
+  .award_box:hover {
+      background: #171717;
+      height: 7.25rem;
+  }
+
+  .award_box .award_pic img {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.3s ease-in-out;
+  }
+
+  .award_box {
+      color: rgb(255, 255, 255);
+      height: 7.25rem;
+      justify-content: space-between;
+      display: flex;
+      font-weight: 500;
+      position: relative;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 0.875rem;
+      place-items: center;
+      transition: background 0.5s ease-in-out;
+      padding: 2.4375rem 2.6875rem;
+      width: 95vw;
+  }
+
+  .Awards {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+  }
+
+  .award1:hover .award_pic1 img,
+  .award2:hover .award_pic2 img,
+  .award3:hover .award_pic3 img,
+  .award4:hover .award_pic4 img,
+  .award5:hover .award_pic5 img,
+  .award7:hover .award_pic7 img,
+  .award6:hover .award_pic6 img {
+      opacity: 1;
+      transform: scale(1);
+  }
+
+  .news .news_header h2 {
+      max-width: 55rem;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 500;
+      text-align: center;
+      font-size: 4.44rem;
+      margin-top: 20.08rem;
+      line-height: 100%;
+  }

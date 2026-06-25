@@ -210,3 +210,18 @@ requestAnimationFrame(() => {
     });
 
 });
+
+function playAudioOnHoverClass(className, audioFilePath) {
+    const elements = document.querySelectorAll('.' + className);
+
+    elements.forEach(element => {
+        const sound = new Audio(audioFilePath);
+
+        element.addEventListener('mouseover', () => {
+            sound.currentTime = 0; 
+            sound.play().catch(error => console.log("Audio play failed:", error));
+        });
+    });
+}
+
+playAudioOnHoverClass('award_box', 'assests/click_min.mp3');
