@@ -1941,3 +1941,90 @@
   .li.active .ans {
       max-height: 200px;
   }
+
+  footer {
+      padding-left: 5vw;
+      padding-right: 5vw;
+  }
+
+  footer .footer_header {
+      text-align: center;
+      background-color: #101010;
+      border: solid 1px #535353;
+      border-radius: 1.885rem;
+      justify-content: space-between;
+      display: flex;
+      position: relative;
+      width: 90vw;
+      height: 743px;
+      overflow: hidden;
+      padding: 6.43rem 0 2.22rem 4.17rem;
+  }
+
+  .cta_left p {
+      max-width: 28.9rem;
+      font-size: 1.25rem;
+      line-height: 1.94rem;
+      color: #737373;
+      text-align: left;
+  }
+
+  .cta_left h1 {
+      max-width: 33.1rem;
+      color: white;
+      text-align: left;
+      letter-spacing: -.13889rem;
+      margin-bottom: 2.08rem;
+      font-weight: 500;
+      font-size: 7.78rem;
+      line-height: 97%;
+  }
+
+  .cta_left {
+      position: absolute;
+      top: 70px;
+      left: 50px;
+  }
+
+  .cta_right img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+
+  .button_box .button1 button {
+      background-color: #fe4a23;
+      border-radius: 1.111rem;
+      flex: none;
+      font-size: 1.425rem;
+      justify-content: center;
+      margin-right: 1.25rem;
+      align-items: center;
+      padding: 2.85rem 3.8rem 2.45rem;
+      display: flex;
+      border: none;
+      outline: none;
+      color: white;
+      margin-top: 10.25rem;
+    }
+    
+    .button_box .button2 button {
+      background-color: #404040;
+      border-radius: 1.111rem;
+      flex: none;
+      font-size: 1.425rem;
+      justify-content: center;
+      margin-right: 1.25rem;
+      align-items: center;
+      padding: 2.85rem 3.8rem 2.45rem;
+      display: flex;
+      border: none;
+      outline: none;
+      color: white;
+      margin-top: 10.25rem;
+  }
+
+  .button_box {
+      display: flex;
+      flex-direction: row;
+  }
