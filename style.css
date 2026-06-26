@@ -1853,3 +1853,91 @@
   .news_container .hover_button:hover .button2 {
       transform: translateY(-11px);
   }
+
+  .faq_conatiner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15rem;
+  }
+
+  .faq_conatiner h1 {
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-size: 3.88889rem;
+      font-weight: 500;
+      margin-top: 19rem;
+      margin-bottom: 5rem;
+  }
+
+  .li {
+      border-bottom: 1px solid #2d2d2d;
+      overflow: hidden;
+      width: 80vw;
+      /* transform: translateX(2%); */
+      margin-bottom: 16px;
+      transition: .3s;
+  }
+
+  .li .q {
+      width: 100%;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      text-align: left;
+      font-size: 1.66667rem;
+      font-weight: 500;
+      line-height: 119%;
+  }
+
+  .plus {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      flex-shrink: 0;
+  }
+
+  .plus span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background: rgb(225, 225, 225);
+      transform: translate(-50%, -50%);
+      transition: .35s ease;
+  }
+
+  .plus span:last-child {
+      transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .li.active .plus span:last-child {
+      transform: translate(-50%, -50%) rotate(180deg);
+      opacity: 0;
+  }
+
+  .li .ans {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .45s ease-in-out;
+  }
+
+  .li .ans p {
+      color: #b5b5b5;
+      line-height: 1.8;
+      padding: 0 24px 24px;
+      font-size: 16px;
+  }
+
+  .li.active .ans {
+      max-height: 200px;
+  }

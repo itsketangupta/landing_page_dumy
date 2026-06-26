@@ -218,10 +218,33 @@ function playAudioOnHoverClass(className, audioFilePath) {
         const sound = new Audio(audioFilePath);
 
         element.addEventListener('mouseover', () => {
-            sound.currentTime = 0; 
+            sound.currentTime = 0;
             sound.play().catch(error => console.log("Audio play failed:", error));
         });
     });
 }
 
 playAudioOnHoverClass('award_box', 'assests/click_min.mp3');
+
+
+const faq_buttons = document.querySelectorAll(".li .q");
+
+faq_buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const currentBox = button.parentElement;
+
+        document.querySelectorAll(".faq_conatiner .li").forEach(box => {
+
+            if (box !== currentBox) {
+                box.classList.remove("active");
+            }
+
+        });
+
+        currentBox.classList.toggle("active");
+
+    });
+
+});
