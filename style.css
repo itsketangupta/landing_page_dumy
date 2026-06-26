@@ -2006,9 +2006,9 @@
       outline: none;
       color: white;
       margin-top: 10.25rem;
-    }
-    
-    .button_box .button2 button {
+  }
+
+  .button_box .button2 button {
       background-color: #404040;
       border-radius: 1.111rem;
       flex: none;
@@ -2024,7 +2024,94 @@
       margin-top: 10.25rem;
   }
 
+  .footer_link {
+      display: flex;
+      flex-direction: row;
+      margin-top: 7rem;
+  }
+
+  .footer_main {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+  }
+
   .button_box {
       display: flex;
       flex-direction: row;
+  }
+
+  li {
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .li_box {
+      display: flex;
+      flex-direction: row;
+      gap: 5rem;
+  }
+
+  .li_box .li_row .li_header {
+      cursor: pointer;
+      color: white;
+  }
+
+  .li_box .li_row li {
+      cursor: pointer;
+      color: #737373;
+  }
+
+  .li_box .li_row {
+      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .website_url .butts {
+      display: flex;
+      gap: 1rem;
+  }
+
+  .website_url .butts button {
+      background-color: #171717;
+      border: 1px #ffffff1a;
+      border-radius: .95rem;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      display: flex;
+  }
+
+  .website_url {
+      margin-top: 6rem;
+  }
+
+  .website_url a {
+      color: #ffffff;
+      align-self: flex-end;
+      font-size: 3.2rem;
+      font-weight: 500;
+      line-height: 120%;
+  }
+
+  footer .fotter_line {
+      width: 90vw;
+      height: 1px;
+      background-color: #535353;
+      margin-top: 6rem;
+  }
+
+  .bottomes_fotter_txt {
+      margin-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      color: #a3a3a3;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.75rem;
   }
